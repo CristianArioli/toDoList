@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#ffffff"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".MainActivity">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnListHoje"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:background="#ffffff"
+                android:text="Hoje"
+                android:textColor="#2d7fb3"
+                android:textFontWeight="900"
+                android:textSize="25dp"></Button>
+
+            <Button
+                android:id="@+id/btnListAmanha"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:background="#ffffff"
+                android:text="Amanhã"
+                android:textColor="#2d7fb3"
+                android:textFontWeight="900"
+                android:textSize="25dp"></Button>
+
+            <Button
+                android:id="@+id/btnListEmBreve"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:background="#ffffff"
+                android:text="Em Breve"
+                android:textColor="#2d7fb3"
+                android:textFontWeight="900"
+                android:textSize="25dp"></Button>
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/lstContatos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:dividerHeight="1dp"
+            tools:listitem="@tools:sample/lorem" />
+
+    </LinearLayout>
+
+</LinearLayout>
